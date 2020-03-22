@@ -86,10 +86,10 @@ Options
 
 |   option    | Description                                                  | Default Value | Possible values | Required                 |
 | :---------: | ------------------------------------------------------------ | ------------- | --------------- | ------------------------ |
-|  zoomHide   | hide the layer while zooming. Useful when overlay contains a lot of elements and animation is laggy. | false         | Bool            | no                       |
-|  zoomDraw   | whether to trigger drawCallback on after zooming is done. Useful  when you want to adjust size or width of the elements depending on zoom. | true          | Bool            | no                       |
-|  zoomAble   | after Zooming : transform (translate only, no scale)         | true          | Bool            | no                       |
-| interactive | after Zooming : transform (translate and scale)              | true          | Bool            | no                       |
+|  zoomHide   | **true:** hide the layer while zooming. Useful when overlay contains a lot of elements and animation is laggy. | false         | Bool            | no                       |
+|  zoomDraw   | **true:** trigger drawCallback on after zooming is done. Useful  when you want to adjust size or width of the elements depending on zoom. | true          | Bool            | no                       |
+|  zoomAble   | after Zooming :  **true:** transform (translate and scale)   **false:** transform (translate only, no scale) | true          | Bool            | no                       |
+| interactive | **true:** enable event   **false:** disable event            | true          | Bool            | no                       |
 |   center    | if zoomAble = false, translate reference by this point       | [0,0]         | [lat, lng]      | if zoomAble = false, yes |
 
 *Factory method*
